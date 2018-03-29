@@ -1,7 +1,7 @@
 #A program that will hopefully control a motor via a Raspberry Pi Zero W
 
-from Tkinter import Frame, Scale, HORIZONTAL, Tk 
-import Rpi.GPIO as GPIO 
+from tkinter import Frame, Scale, HORIZONTAL, Tk 
+import RPi.GPIO as GPIO
 from time import sleep
 
 GPIO.setmode(GPIO.BCM)
@@ -24,6 +24,6 @@ class App:
 
 root = Tk()
 root.wm_title('Doosan Motor Control')
-app = App(root)
+app = App(root, width=200, height=600)
 root.geometry("200x50+0+0")
 root.mainloop()
